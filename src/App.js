@@ -1,33 +1,23 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Card from "./Card";
 
 function App() {
+  const thumbs = [
+    "lake-inniscarra-thumb.jpg",
+    "performance-series-thumb.jpg",
+    "slow-pulls-thumb.jpg",
+    "20-minutes-to-toned-thumb.jpg",
+    "charles-race-thumb.jpg",
+    "full-body-hiit-thumb.jpg",
+    "kafue-river-thumb.jpg",
+    "shred-and-burn-thumb.jpg",
+  ];
   return (
     <div className="App">
-      <div className="card">
-        <img src="images\lake-inniscarra-thumb.jpg" alt="" />
-      </div>
-      <div className="card">
-        <img src="images\performance-series-thumb.jpg" alt="" />
-      </div>
-      <div className="card">
-        <img src="images\slow-pulls-thumb.jpg" alt="" />
-      </div>
-      <div className="card">
-        <img src="images\20-minutes-to-toned-thumb.jpg" alt="" />
-      </div>
-      <div className="card">
-        <img src="images\charles-race-thumb.jpg" alt="" />
-      </div>
-      <div className="card">
-        <img src="images\full-body-hiit-thumb.jpg" alt="" />
-      </div>
-      <div className="card">
-        <img src="images\kafue-river-thumb.jpg" alt="" />
-      </div>
-      <div className="card">
-        <img src="images\shred-and-burn-thumb.jpg" alt="" />
-      </div>
+      {thumbs.map((image) => (
+        <Card image={image} />
+      ))}
     </div>
   );
 }
