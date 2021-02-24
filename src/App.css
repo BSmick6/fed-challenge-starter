@@ -5,4 +5,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  margin: auto;
+  padding: 100px;
+  max-width: 1300px;
 }
